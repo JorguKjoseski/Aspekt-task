@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspekt_task</title>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Todo List</h1>
+        </header>
+        <form>
+            <input type="text" class="todo-input input_name" placeholder="Enter name" />
+            <input type="date" class="todo-input input_date" placeholder="Enter date" />
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="" disabled selected hidden>Choose status</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+                <select name="todos" class="filter-todo filter-todo2">
+                    <option value="" disabled selected hidden>Filter status</option>
+                    <option value="all">All</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+
+        </form>
+        <div class="task-div">
+            <h2>Tasks</h2>
+        </div>
+        <div class="todo-container">
+            <table>
+                <tr>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+        <div class="sort-btn">
+            <button class="sort">Sort by date</button>
+        </div>
+
+
+    </body>
+    <script src="./assets/app.js"></script>
+
+</html>
